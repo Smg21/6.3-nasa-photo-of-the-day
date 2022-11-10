@@ -1,3 +1,7 @@
+*{
+  background-color: palevioletred;
+}
+
 .App {
   text-align: center;
 }
@@ -28,6 +32,12 @@
   color: #61dafb;
 }
 
+.nasa-photo-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +45,20 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.explanation {
+  max-width: 60%;
+  height: 50%;
+  font-size: large;
+}
+
+.date{
+  font-size: large;
+}
+
+img{
+  max-width: 100%;
+  object-fit: cover;
+  
 }
