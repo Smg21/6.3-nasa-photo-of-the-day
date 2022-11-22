@@ -2,6 +2,7 @@ import React, {useState, useEffect } from "react";
 import axios from 'axios';
 import "./App.css";
 import NasaPhoto from "./Components/NasaPhoto";
+import styled from "styled-components";
 
 
 
@@ -13,6 +14,11 @@ const dummyData = {
   title: "Total Lunar Eclipse"
 }
 */
+
+const Nasaa = styled.div`
+background-color: #2D6E75;
+  color:#B9C7C7;
+`;
 
 function App() {
   const [data, setData] = useState();
@@ -26,9 +32,9 @@ function App() {
   }, [])
  
   return (
-    <div className="App">
+    <Nasaa className="App">
       { data && <NasaPhoto photo ={data} />}
-    </div>
+    </Nasaa>
   );
 }
 

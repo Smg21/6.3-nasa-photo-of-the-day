@@ -1,6 +1,4 @@
-*{
-  background-color: palevioletred;
-}
+
 
 .App {
   text-align: center;
@@ -51,6 +49,7 @@
   max-width: 60%;
   height: 50%;
   font-size: large;
+  color:#B9C7C7;
 }
 
 .date{
@@ -58,7 +57,14 @@
 }
 
 img{
-  max-width: 100%;
-  object-fit: cover;
-  
+  max-width: 65%;
+  align-items: center;
+  border: 10px;
+  border-style: solid;
+  border-color: #BEE3E8;
+}
+
+img:hover {
+  max-width: 85%;
+  align-items: center;
 }
